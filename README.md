@@ -71,9 +71,9 @@ Answer:\
 ##### 2. What is the last name of the employee with the most orders?
 
 
--- Merge Employees record with order record on employee Id\n
--- Count how many times each employeeID has come up and sort it from the highest number\n
--- Get only one of the employee and return the last name\n
+-- Merge Employees record with order record on employee Id<br>
+-- Count how many times each employeeID has come up and sort it from the highest number<br>
+-- Get only one of the employee and return the last name<br>
 
 ```
 SELECT LastName AS "Last Name of Employee With Most Orders"
@@ -88,10 +88,10 @@ LIMIT 1;
 
 ##### 3. What product was ordered the most by customers in Germany?
 
--- Merge Customers, Orders, and OrderDetails with Product table using their respective IDs
--- Get only the orders with the customerID that correspond to Germany
--- Group them all based on the name of the product and sort it by how much that product has been ordered
--- Check the highest value and return the name of that product
+-- Merge Customers, Orders, and OrderDetails with Product table using their respective IDs<br>
+-- Get only the orders with the customerID that correspond to Germany<br>
+-- Group them all based on the name of the product and sort it by how much that product has been ordered<br>
+-- Check the highest value and return the name of that product<br>
 
 ```
 SELECT Products.ProductName, SUM(OrderDetails.Quantity) AS Total_Orders, Customers.Country
