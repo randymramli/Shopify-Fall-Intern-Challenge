@@ -7,7 +7,7 @@ Given some sample data, write a program to answer the following: [click here to 
   On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis. 
 
 ##### 1. Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
-Answer: \
+Answer:
 
 The wrong answer could be attributed to the fact that the AOV simply counts the average of the 'order_amount' column.
 In order to find the real average order value, we need to take into account the how many items have actually been sold in 'total_items' column.
@@ -20,7 +20,7 @@ The wrong average order value (AOV): 3145.13
 
 ##### 2. What metric would you report for this dataset?
 
-Answer: \
+Answer:
 In order to find the true AOV, we need to calculate the sum of 'order_amount' and then divide it by the sum of 'total_items'.
 This way, we can get the real average order value.
 
@@ -39,7 +39,7 @@ The actual AOV is:  357.92
 
 ##### 3. What is its value?
 
-Answer: \
+Answer:
 The correct average order vaule is 357.92.
 (The total number of 'order_amount': 15725640; The total number of 'total_items': 43936)
 
@@ -54,9 +54,9 @@ For this question you’ll need to use SQL. [Follow this link](https://www.w3sch
 
 ##### 1. How many orders were shipped by Speedy Express in total?
 
--- Merge Employees record with order record on employee Id
--- Count how many times each employeeID has come up and sort it from the highest number
--- Get only one of the employee and return the last name
+-- Merge Employees record with order record on employee Id\n
+-- Count how many times each employeeID has come up and sort it from the highest \n
+-- Get only one of the employee and return the last name\n
 
 ```
 SELECT LastName AS "Last Name of Employee With Most Orders"
@@ -71,9 +71,9 @@ Answer:\
 ##### 2. What is the last name of the employee with the most orders?
 
 
--- Merge Employees record with order record on employee Id
--- Count how many times each employeeID has come up and sort it from the highest number
--- Get only one of the employee and return the last name
+-- Merge Employees record with order record on employee Id\n
+-- Count how many times each employeeID has come up and sort it from the highest number\n
+-- Get only one of the employee and return the last name\n
 
 ```
 SELECT LastName AS "Last Name of Employee With Most Orders"
@@ -83,7 +83,7 @@ ORDER BY COUNT(Employees.EmployeeID) DESC
 LIMIT 1;
 ```
 
--- Answer:
+-- Answer:\n
 -- Peacock
 
 ##### 3. What product was ordered the most by customers in Germany?
