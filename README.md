@@ -65,7 +65,7 @@ GROUP BY  Employees.EmployeeID
 ORDER BY COUNT(Employees.EmployeeID) DESC
 LIMIT 1;
 ```
-Answer:\
+Answer:<br>
 54
 
 ##### 2. What is the last name of the employee with the most orders?
@@ -83,7 +83,7 @@ ORDER BY COUNT(Employees.EmployeeID) DESC
 LIMIT 1;
 ```
 
--- Answer:\n
+-- Answer:<br>
 -- Peacock
 
 ##### 3. What product was ordered the most by customers in Germany?
@@ -105,5 +105,5 @@ ORDER BY Total_orders DESC
 LIMIT 1;
 ```
 
--- Answer:
+-- Answer:<br>
 -- Boston Crab Meat
