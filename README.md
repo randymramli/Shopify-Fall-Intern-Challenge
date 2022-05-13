@@ -54,9 +54,9 @@ For this question you’ll need to use SQL. [Follow this link](https://www.w3sch
 
 ##### 1. How many orders were shipped by Speedy Express in total?
 
--- Merge Employees record with order record on employee Id\n
--- Count how many times each employeeID has come up and sort it from the highest \n
--- Get only one of the employee and return the last name\n
+-- Merge Employees record with order record on employee Id<br>
+-- Count how many times each employeeID has come up and sort it from the highest<br>
+-- Get only one of the employee and return the last name<br>
 
 ```
 SELECT LastName AS "Last Name of Employee With Most Orders"
